@@ -1,0 +1,30 @@
+.header {
+  &__title {
+    display: inline-block;
+  }
+
+  &__button {
+    position: relative;
+    width: 180px;
+    height: 50px;
+    border-radius: 25px;
+    background-color: #ff8522;
+    color: #fff;
+    font-size: 14px;
+    font-weight: 600;
+    border: none;
+  }
+
+  &__button::before {
+    display: block;
+    position: absolute;
+    left: 30px;
+    top: 1em;
+    content: ' ';
+    background-image: url('../../images/cart.svg');
+    background-size: 23px 23px;
+    height: 23px;
+    width: 23px;
+
+  }
+}

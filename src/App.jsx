@@ -1,9 +1,13 @@
 import React from 'react';
-import './App.css';
-import { Products } from './features/products/Products';
+import { Switch, Route } from 'react-router-dom';
+import './App.scss';
+import { Products } from './components/products/Products';
+import { ProductsPage } from './pages/ProductsPage';
 
 export const App = () => (
   <div className="App">
-    <Products />
+    <Switch>
+      <Route exec path="/products" component={ProductsPage} />
+    </Switch>
   </div>
 );
