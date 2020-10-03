@@ -1,9 +1,12 @@
+@import '../../styles/vars';
+
 .product {
   width: 320px;
   height: 370px;
-  margin-right: 5px;
+  margin: 5px;
+  padding-top: 20px;
   border-radius: 5px;
-  background-color: #fff;
+  background-color: $c-white;
   transition: box-shadow 0.25s cubic-bezier(.47,0,.75,.72),
     transform 0.25s,
   ;
@@ -16,5 +19,40 @@
       7px 7px 20px 0 rgba(0,0,0,.1),
       4px 4px 5px 0 rgba(0,0,0,.1);
     transform: scale(1.02);
+  }
+
+  &__foto {
+    // position: fixed;
+    // top: 0;
+    // left: 0;
+    width: 150px;
+    height: 150px;
+  }
+
+  &__description {
+    padding: 10px;
+  }
+
+  &__title_area {
+
+  }
+
+  &__title {
+    position: relative;
+    text-align: initial;
+    &::before {
+      position: absolute;
+      bottom: -10px;
+      content: '';
+      width: 28px;
+      height: 2px;
+      background-color: $c-orange;
+      // background-color:
+    }
+  }
+
+  &__weight_units {
+    text-align: initial;
+    margin: 0;
   }
 }
