@@ -1,0 +1,6 @@
+@mixin button-colored($width, $height, $color) {
+  width: $width;
+  height: $height;
+  border-radius: 25px;
+  background-color: $color;
+}

@@ -1,4 +1,10 @@
 @import './styles/vars';
+@import './styles/mixins';
+
+
+* {
+  box-sizing: border-box;
+}
 
 body {
   margin: 0;

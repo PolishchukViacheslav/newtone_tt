@@ -1,6 +1,6 @@
 import React from 'react';
 import { useSelector } from 'react-redux';
-import { Product } from './Product';
+import { Product } from './product/Product';
 import './Products.scss';
 import { selectProducts } from './productsSlice';
 
