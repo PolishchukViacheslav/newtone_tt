@@ -1,6 +1,9 @@
+@import '../../styles/vars';
+
 .products {
-  max-width: 1200px;
+  max-width: $w-medium;
   margin: 0 auto;
+  
   &__list {
     display: flex;
     flex-wrap: wrap;

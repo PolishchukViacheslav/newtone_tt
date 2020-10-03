@@ -1,11 +1,12 @@
 import React, { useState } from 'react';
 import PropTypes from 'prop-types';
 import './WeightQuantity.scss';
-import { useDispatch } from 'react-redux';
-import { delProduct, setPurchases } from '../../cart/CartSlice';
+import { useDispatch, useSelector } from 'react-redux';
+import { delProduct, selectPurchases, setPurchases } from '../../cart/CartSlice';
 
 export const WeightQuantity = ({ name, unit }) => {
-  const [quantity, setQuantity] = useState(0);
+  const initWeight = useSelector(selectPurchases)[name] || 0;
+  const [quantity, setQuantity] = useState(initWeight);
   const dispatch = useDispatch();
 
   const handleIncrementWeight = () => {
