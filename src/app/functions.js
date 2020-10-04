@@ -20,7 +20,7 @@ export const priceReducer = (purchases) => {
   const total = purchases.reduce((subTotal, product) => {
     if (Object.prototype.hasOwnProperty.call(product, 'specialPrice')) {
       const { specialPrice, cartWeight, price } = product;
-      if ((cartWeight / specialPrice.weight) > 1) {
+      if ((cartWeight / specialPrice.weight) >= 1) {
         const specialPriceQuantity = Math.floor(cartWeight / specialPrice.weight);
         const regularPriceQuantity = cartWeight
         % (specialPriceQuantity * specialPrice.weight);
