@@ -1,0 +1,27 @@
+{
+  "files": {
+    "main.css": "/newtone_tt/static/css/main.207506de.chunk.css",
+    "main.js": "/newtone_tt/static/js/main.56ee46f8.chunk.js",
+    "main.js.map": "/newtone_tt/static/js/main.56ee46f8.chunk.js.map",
+    "runtime-main.js": "/newtone_tt/static/js/runtime-main.27695527.js",
+    "runtime-main.js.map": "/newtone_tt/static/js/runtime-main.27695527.js.map",
+    "static/css/2.764ccc25.chunk.css": "/newtone_tt/static/css/2.764ccc25.chunk.css",
+    "static/js/2.c6614629.chunk.js": "/newtone_tt/static/js/2.c6614629.chunk.js",
+    "static/js/2.c6614629.chunk.js.map": "/newtone_tt/static/js/2.c6614629.chunk.js.map",
+    "index.html": "/newtone_tt/index.html",
+    "precache-manifest.b67ecf2ac3c618d114be796668cec1c7.js": "/newtone_tt/precache-manifest.b67ecf2ac3c618d114be796668cec1c7.js",
+    "service-worker.js": "/newtone_tt/service-worker.js",
+    "static/css/2.764ccc25.chunk.css.map": "/newtone_tt/static/css/2.764ccc25.chunk.css.map",
+    "static/css/main.207506de.chunk.css.map": "/newtone_tt/static/css/main.207506de.chunk.css.map",
+    "static/js/2.c6614629.chunk.js.LICENSE.txt": "/newtone_tt/static/js/2.c6614629.chunk.js.LICENSE.txt",
+    "static/media/LayoutHeader.scss": "/newtone_tt/static/media/cart.4f75bc56.svg",
+    "static/media/Cart.scss": "/newtone_tt/static/media/pay.90f46705.svg"
+  },
+  "entrypoints": [
+    "static/js/runtime-main.27695527.js",
+    "static/css/2.764ccc25.chunk.css",
+    "static/js/2.c6614629.chunk.js",
+    "static/css/main.207506de.chunk.css",
+    "static/js/main.56ee46f8.chunk.js"
+  ]
+}
