@@ -1,6 +1,6 @@
 self.__precacheManifest = (self.__precacheManifest || []).concat([
   {
-    "revision": "dc4a1215ee8d874b1feb6f1c0017971f",
+    "revision": "dc393a73f7740cbe90927c295d8141b7",
     "url": "/newtone_tt/index.html"
   },
   {
@@ -8,7 +8,7 @@ self.__precacheManifest = (self.__precacheManifest || []).concat([
     "url": "/newtone_tt/static/css/2.764ccc25.chunk.css"
   },
   {
-    "revision": "821bcba121dd07ad8672",
+    "revision": "f5805b45712d8e8f5a70",
     "url": "/newtone_tt/static/css/main.207506de.chunk.css"
   },
   {
@@ -20,8 +20,8 @@ self.__precacheManifest = (self.__precacheManifest || []).concat([
     "url": "/newtone_tt/static/js/2.c6614629.chunk.js.LICENSE.txt"
   },
   {
-    "revision": "821bcba121dd07ad8672",
-    "url": "/newtone_tt/static/js/main.56ee46f8.chunk.js"
+    "revision": "f5805b45712d8e8f5a70",
+    "url": "/newtone_tt/static/js/main.48f5c2d3.chunk.js"
   },
   {
     "revision": "3351c09df54b3e6fb7fc",
