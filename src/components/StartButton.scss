@@ -1,0 +1,26 @@
+@import '../styles/mixins';
+@import '../styles/vars';
+
+
+.start_button {
+  margin: auto;
+  @include button-colored(200px, 200px, $c-orange);
+  font-size: 40px;
+  font-weight: 700;
+  color: $c-white;
+  border: none;
+  cursor: pointer;
+  transition: box-shadow 0.25s cubic-bezier(.47,0,.75,.72),
+    transform 0.25s,
+  ;
+
+  &:hover {
+    -webkit-box-shadow: inset 2px 2px 2px 0 hsla(0,0%,100%,.5),
+      7px 7px 20px 0 rgba(0,0,0,.1),
+      4px 4px 5px 0 rgba(0,0,0,.1);
+    box-shadow: inset 2px 2px 2px 0 hsla(0,0%,100%,.5),
+      7px 7px 20px 0 rgba(0,0,0,.1),
+      4px 4px 5px 0 rgba(0,0,0,.1);
+    transform: scale(1.02);
+  }
+}
