@@ -8,6 +8,7 @@ import { StartPage } from './pages/StartPage';
 export const App = () => (
   <div className="App">
     <Switch>
+      <Route exact path="/" component={StartPage} />
       <Route exact path="/products" component={ProductsPage} />
       <Route exact path="/cart" component={CartPage} />
       <Route component={StartPage} />
