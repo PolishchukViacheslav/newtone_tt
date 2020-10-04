@@ -1,6 +1,6 @@
 # This project was bootstrapped with redux/toolkit template for Newton test task
 
-## Here You can see [Demo](https://polishchukviacheslav.github.io/newtone_tt/products)
+## Here You can see [Demo](https://polishchukviacheslav.github.io/newtone_tt)
 
 ### Technologies 
 - React Redux toolkit

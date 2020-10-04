@@ -10,7 +10,7 @@ export const Cart = () => {
   const cart = useSelector(cartSelector);
   const history = useHistory();
   const handleRouteToProducts = () => {
-    history.push('/products');
+    history.push('/');
   };
 
   const totalPrice = useMemo(() => priceReducer(cart), [cart]);
