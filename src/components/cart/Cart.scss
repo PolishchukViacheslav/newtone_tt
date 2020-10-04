@@ -1,8 +1,8 @@
 @import '../../styles/vars';
+@import '../../styles/mixins';
 
 .cart {
   display: flex;
-  border: 1px solid black;
   min-height: 560px;
   max-width: $w-medium;
   background-color: $c-white;
@@ -10,12 +10,140 @@
   &__products_area {
     flex: 0.65;
     height: 100%;
+    padding: 0 10px;
+  }
+
+  &__product {
+    margin-bottom: 5px;
   }
 
   &__payments {
     flex: 0.35;
     height: 100vh;
-    border-left: 0.5px solid #f5f5f5;
+    padding: 20px 5px;
+    border-left: 0.5px solid $c-lightBorder;
 
+  }
+}
+
+.payments {
+  &__item {
+    border-bottom: 0.5px solid $c-lightBorder;
+  }
+
+  &__buttons {
+    display: flex;
+    flex-direction: column;
+    padding: 10px 0;
+  }
+
+  &__pay_button {
+    position: relative;
+    margin-bottom: 10px;
+    @include button-colored(initial, 30px, $c-orange);
+    color: $c-white;
+    font-size: 14px;
+    font-weight: 600;
+    border: none;
+    cursor: pointer;
+    &::before {
+      display: block;
+      position: absolute;
+      left: 30px;
+      top: 0.25rem;
+      content: ' ';
+      background-image: url('../../images/pay.svg');
+      background-size: cover;
+      height: 23px;
+      width: 23px;
+    }
+  }
+
+  &__shop_button {
+    position: relative;
+    margin-bottom: 10px;
+    @include button-colored(initial, 30px, $c-orange);
+    color: $c-white;
+    font-size: 14px;
+    font-weight: 600;
+    border: none;
+    cursor: pointer;
+  }
+}
+
+.payment {
+  display: flex;
+  justify-content: space-between;
+}
+
+.total_payment {
+  display: flex;
+  justify-content: space-between;
+  padding-top: 10px;
+  border-bottom: 2px solid $c-blackBorder;
+}
+
+.details {
+  position: relative;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 0 10px;
+  border-radius: 5px;
+  border: 0.1px solid $c-lightBorder;
+
+&__presentation {
+  display: flex;
+  align-items: center;
+}
+
+  &__img {
+    width: 50px;
+    height: 50px;
+    margin-right: 10px;
+  }
+
+  &__weight {
+    margin-right: 10px;
+    font-size: 10px;
+  }
+
+  &__price {
+    margin-right: 10px;
+    font-size: 10px;
+    &--special {
+    font-size: 10px;
+    font-weight: 600;
+    color: $c-specialRed;
+    }
+  }
+
+  &__cost {
+    min-width: max-content;
+  }
+
+  &__total {
+    font-size: 10px;
+    font-weight: 700;
+  }
+
+  &__remove_btn {
+    position: absolute;
+    top: 3px;
+    right: 3px;
+    width: 15px;
+    height: 15px;
+    padding: 0;
+    font-size: 10px;
+    color: $c-lightBorder;
+    background-color: $c-white;
+    border-radius: 50%;
+    border: 1px solid $c-lightBorder;
+    cursor: pointer;
+    transition: color 0.2s, border-color 0.2s;
+    &:hover {
+      color: $c-lightRed;
+      border-color: $c-lightRed;
+    }
   }
 }

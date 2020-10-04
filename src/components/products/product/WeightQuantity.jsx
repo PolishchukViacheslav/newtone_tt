@@ -20,7 +20,6 @@ export const WeightQuantity = ({ name, unit }) => {
 
   const handleDecrementWeight = () => {
     if (quantity === 0) {
-      // dispatch(delProduct(name));
       return;
     }
 
